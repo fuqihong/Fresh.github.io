@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="python,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人随笔">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="主要流程1、Python邮件基础配置2、将Dataframe格式的表格直接转化为HTML格式的表格3、添加附件4、常见问题 Python包1234567import smtplibfrom email.mime.multipart import MIMEMultipart  # 构建邮件头信息，包括发件人，接收人，标题等from email.mime.text import MIMEText  #">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python自动发邮件-withDataframe">
+<meta property="og:url" content="http://yoursite.com/2018/12/01/Python自动发邮件-withDataframe/index.html">
 <meta property="og:site_name" content="个人随笔">
+<meta property="og:description" content="主要流程1、Python邮件基础配置2、将Dataframe格式的表格直接转化为HTML格式的表格3、添加附件4、常见问题 Python包1234567import smtplibfrom email.mime.multipart import MIMEMultipart  # 构建邮件头信息，包括发件人，接收人，标题等from email.mime.text import MIMEText  #">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-01T13:45:54.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人随笔">
+<meta name="twitter:title" content="Python自动发邮件-withDataframe">
+<meta name="twitter:description" content="主要流程1、Python邮件基础配置2、将Dataframe格式的表格直接转化为HTML格式的表格3、添加附件4、常见问题 Python包1234567import smtplibfrom email.mime.multipart import MIMEMultipart  # 构建邮件头信息，包括发件人，接收人，标题等from email.mime.text import MIMEText  #">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/01/Python自动发邮件-withDataframe/">
 
 
 
 
 
-  <title>个人随笔</title>
+  <title>Python自动发邮件-withDataframe | 个人随笔</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -264,137 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="qihong.fu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="个人随笔">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/01/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-01T21:19:59+08:00">
-                2018-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -424,9 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/01/Python自动发邮件-withDataframe/" itemprop="url">Python自动发邮件-withDataframe</a></h1>
+          <h1 class="post-title" itemprop="name headline">Python自动发邮件-withDataframe</h1>
         
 
         <div class="post-meta">
@@ -476,9 +350,7 @@
       
 
       
-        
-          
-            <h2 id="主要流程"><a href="#主要流程" class="headerlink" title="主要流程"></a>主要流程</h2><p>1、Python邮件基础配置<br>2、将Dataframe格式的表格直接转化为HTML格式的表格<br>3、添加附件<br>4、常见问题</p>
+        <h2 id="主要流程"><a href="#主要流程" class="headerlink" title="主要流程"></a>主要流程</h2><p>1、Python邮件基础配置<br>2、将Dataframe格式的表格直接转化为HTML格式的表格<br>3、添加附件<br>4、常见问题</p>
 <h4 id="Python包"><a href="#Python包" class="headerlink" title="Python包"></a>Python包</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> smtplib</span><br><span class="line"><span class="keyword">from</span> email.mime.multipart <span class="keyword">import</span> MIMEMultipart  <span class="comment"># 构建邮件头信息，包括发件人，接收人，标题等</span></span><br><span class="line"><span class="keyword">from</span> email.mime.text <span class="keyword">import</span> MIMEText  <span class="comment"># 构建邮件正文，可以是text，也可以是HTML</span></span><br><span class="line"><span class="keyword">from</span> email.mime.application <span class="keyword">import</span> MIMEApplication  <span class="comment"># 构建邮件附件，理论上，只要是文件即可，一般是图片，Excel表格，word文件等</span></span><br><span class="line"><span class="keyword">from</span> email.header <span class="keyword">import</span> Header  <span class="comment"># 专门构建邮件标题的，这样做，可以支持标题中文</span></span><br><span class="line"></span><br><span class="line">pd.set_option(<span class="string">'display.max_colwidth'</span>, <span class="number">-1</span>)  <span class="comment"># 能显示的最大宽度, 否则to_html出来的地址就不全</span></span><br></pre></td></tr></table></figure>
 <h4 id="邮箱基本配置"><a href="#邮箱基本配置" class="headerlink" title="邮箱基本配置"></a>邮箱基本配置</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 发件人，收件人</span></span><br><span class="line">sender = <span class="string">'xxxx@xxxx.com'</span></span><br><span class="line">receivers = [<span class="string">'xxxx@xxxx.com'</span>, <span class="string">'xxxx@xxxx.com'</span>]</span><br><span class="line"></span><br><span class="line">message = MIMEMultipart(<span class="string">'related'</span>)</span><br><span class="line"></span><br><span class="line">message[<span class="string">'From'</span>] = sender    <span class="comment"># 发送者</span></span><br><span class="line">message[<span class="string">'To'</span>] =  <span class="string">','</span>.join(receivers)           <span class="comment"># 接收者</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 发件人账号密码</span></span><br><span class="line">smtpserver = <span class="string">'xxxxx.com'</span></span><br><span class="line">username = <span class="string">'username'</span></span><br><span class="line">password = <span class="string">'password'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 邮件标题</span></span><br><span class="line">subject = <span class="string">'Python自动发邮件'</span></span><br><span class="line">message[<span class="string">'Subject'</span>] = Header(subject, <span class="string">'utf-8'</span>)</span><br></pre></td></tr></table></figure>
 <h4 id="将Dataframe转化为HTML格式表格"><a href="#将Dataframe转化为HTML格式表格" class="headerlink" title="将Dataframe转化为HTML格式表格"></a>将Dataframe转化为HTML格式表格</h4><p>Html head 和 body 配置<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_csv(<span class="string">'path'</span>)</span><br><span class="line">df_html = df.to_html(escape=<span class="keyword">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">head = \</span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        &lt;head&gt;</span></span><br><span class="line"><span class="string">            &lt;meta charset="utf-8"&gt;</span></span><br><span class="line"><span class="string">            &lt;STYLE TYPE="text/css" MEDIA=screen&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                table.dataframe &#123;</span></span><br><span class="line"><span class="string">                    border-collapse: collapse;</span></span><br><span class="line"><span class="string">                    border: 2px solid #a19da2;</span></span><br><span class="line"><span class="string">                    /*居中显示整个表格*/</span></span><br><span class="line"><span class="string">                    margin: auto;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                table.dataframe thead &#123;</span></span><br><span class="line"><span class="string">                    border: 2px solid #91c6e1;</span></span><br><span class="line"><span class="string">                    background: #f1f1f1;</span></span><br><span class="line"><span class="string">                    padding: 10px 10px 10px 10px;</span></span><br><span class="line"><span class="string">                    color: #333333;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                table.dataframe tbody &#123;</span></span><br><span class="line"><span class="string">                    border: 2px solid #91c6e1;</span></span><br><span class="line"><span class="string">                    padding: 10px 10px 10px 10px;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                table.dataframe tr &#123;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                table.dataframe th &#123;</span></span><br><span class="line"><span class="string">                    vertical-align: top;</span></span><br><span class="line"><span class="string">                    font-size: 14px;</span></span><br><span class="line"><span class="string">                    padding: 10px 10px 10px 10px;</span></span><br><span class="line"><span class="string">                    color: #105de3;</span></span><br><span class="line"><span class="string">                    font-family: arial;</span></span><br><span class="line"><span class="string">                    text-align: center;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                table.dataframe td &#123;</span></span><br><span class="line"><span class="string">                    text-align: center;</span></span><br><span class="line"><span class="string">                    padding: 10px 10px 10px 10px;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                body &#123;</span></span><br><span class="line"><span class="string">                    font-family: 宋体;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                h1 &#123;</span></span><br><span class="line"><span class="string">                    color: #5db446</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                div.header h2 &#123;</span></span><br><span class="line"><span class="string">                    color: #0002e3;</span></span><br><span class="line"><span class="string">                    font-family: 黑体;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                div.content h2 &#123;</span></span><br><span class="line"><span class="string">                    text-align: center;</span></span><br><span class="line"><span class="string">                    font-size: 28px;</span></span><br><span class="line"><span class="string">                    text-shadow: 2px 2px 1px #de4040;</span></span><br><span class="line"><span class="string">                    color: #fff;</span></span><br><span class="line"><span class="string">                    font-weight: bold;</span></span><br><span class="line"><span class="string">                    background-color: #008eb7;</span></span><br><span class="line"><span class="string">                    line-height: 1.5;</span></span><br><span class="line"><span class="string">                    margin: 20px 0;</span></span><br><span class="line"><span class="string">                    box-shadow: 10px 10px 5px #888888;</span></span><br><span class="line"><span class="string">                    border-radius: 5px;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                h3 &#123;</span></span><br><span class="line"><span class="string">                    font-size: 22px;</span></span><br><span class="line"><span class="string">                    background-color: rgba(0, 2, 227, 0.71);</span></span><br><span class="line"><span class="string">                    text-shadow: 2px 2px 1px #de4040;</span></span><br><span class="line"><span class="string">                    color: rgba(239, 241, 234, 0.99);</span></span><br><span class="line"><span class="string">                    line-height: 1.5;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                h4 &#123;</span></span><br><span class="line"><span class="string">                    color: #e10092;</span></span><br><span class="line"><span class="string">                    font-family: 楷体;</span></span><br><span class="line"><span class="string">                    font-size: 20px;</span></span><br><span class="line"><span class="string">                    text-align: center;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">                td img &#123;</span></span><br><span class="line"><span class="string">                    /*width: 60px;*/</span></span><br><span class="line"><span class="string">                    max-width: 300px;</span></span><br><span class="line"><span class="string">                    max-height: 300px;</span></span><br><span class="line"><span class="string">                &#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            &lt;/STYLE&gt;</span></span><br><span class="line"><span class="string">        &lt;/head&gt;</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line"><span class="comment"># 构造模板的附件（100）</span></span><br><span class="line">    body = \</span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        &lt;body&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        &lt;div align="center" class="header"&gt;</span></span><br><span class="line"><span class="string">            &lt;!--标题部分的信息--&gt;</span></span><br><span class="line"><span class="string">            &lt;h1 align="center"&gt;我的python邮件，使用了Dataframe转为table &lt;/h1&gt;</span></span><br><span class="line"><span class="string">        &lt;/div&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        &lt;hr&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        &lt;div class="content"&gt;</span></span><br><span class="line"><span class="string">            &lt;!--正文内容--&gt;</span></span><br><span class="line"><span class="string">            &lt;h2&gt;带图片展示的表格&lt;/h2&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            &lt;div&gt;</span></span><br><span class="line"><span class="string">                &lt;h4&gt;&#123;table_title&#125;&lt;/h4&gt;</span></span><br><span class="line"><span class="string">                &#123;df_html&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            &lt;/div&gt;</span></span><br><span class="line"><span class="string">            &lt;hr&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            &lt;p style="text-align: center"&gt;</span></span><br><span class="line"><span class="string">                —— 本次报告完 ——</span></span><br><span class="line"><span class="string">            &lt;/p&gt;</span></span><br><span class="line"><span class="string">        &lt;/div&gt;</span></span><br><span class="line"><span class="string">        &lt;/body&gt;</span></span><br><span class="line"><span class="string">        """</span>.format(df_html=df_html, table_title= <span class="string">'table_title'</span>)</span><br><span class="line"></span><br><span class="line">html_msg= <span class="string">"&lt;html&gt;"</span> + head + body + <span class="string">"&lt;/html&gt;"</span></span><br></pre></td></tr></table></figure></p>
@@ -489,8 +361,6 @@
 <h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h4 id="dataframe-显示不全"><a href="#dataframe-显示不全" class="headerlink" title="dataframe 显示不全"></a>dataframe 显示不全</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pd.set_option(<span class="string">'display.max_colwidth'</span>, <span class="number">-1</span>)</span><br></pre></td></tr></table></figure>
 <p>参考文献<br><a href="https://www.jianshu.com/p/5eb10cef74d0" target="_blank" rel="noopener">小白入门，用python 发送定时邮件，将Dataframe转为邮件正文，链接显示为图片</a></p>
 
-          
-        
       
     </div>
     
@@ -505,14 +375,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/01/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -522,10 +414,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -533,6 +426,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -553,8 +450,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -605,6 +511,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#主要流程"><span class="nav-number">1.</span> <span class="nav-text">主要流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python包"><span class="nav-number">1.0.1.</span> <span class="nav-text">Python包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#邮箱基本配置"><span class="nav-number">1.0.2.</span> <span class="nav-text">邮箱基本配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将Dataframe转化为HTML格式表格"><span class="nav-number">1.0.3.</span> <span class="nav-text">将Dataframe转化为HTML格式表格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发送邮件"><span class="nav-number">1.0.4.</span> <span class="nav-text">发送邮件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加附件"><span class="nav-number">1.0.5.</span> <span class="nav-text">添加附件</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">2.</span> <span class="nav-text">常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#dataframe-显示不全"><span class="nav-number">2.0.1.</span> <span class="nav-text">dataframe 显示不全</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -738,6 +660,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

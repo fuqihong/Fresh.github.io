@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="machine learning,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="GBDT和XGBoost  gbdt以CART作为基分类器，xgb还支持线性分类器，这个时候xgb相当于带L1和L2正则项的LR或线性回归，（带正则可以控制模型的复杂度）  gbdt在优化时只用到一阶导数，xgb则对代价函数进行了二阶泰勒展开，同时用到了一阶和二阶导数，顺便，xgb支持支持自定义代价函数，只要函数一阶和二阶导数  Shrinkage(缩减)，相当于学习速率(xgb中的eta)，xg">
+<meta name="keywords" content="machine learning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/12/01/hello-world/index.html">
+<meta property="og:title" content="LR、SVM、RF、GBDT、XGBoost和LightGbm比较">
+<meta property="og:url" content="http://yoursite.com/2019/02/16/LR、SVM、RF、GBDT、XGBoost和LightGbm比较/index.html">
 <meta property="og:site_name" content="个人随笔">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="GBDT和XGBoost  gbdt以CART作为基分类器，xgb还支持线性分类器，这个时候xgb相当于带L1和L2正则项的LR或线性回归，（带正则可以控制模型的复杂度）  gbdt在优化时只用到一阶导数，xgb则对代价函数进行了二阶泰勒展开，同时用到了一阶和二阶导数，顺便，xgb支持支持自定义代价函数，只要函数一阶和二阶导数  Shrinkage(缩减)，相当于学习速率(xgb中的eta)，xg">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-01T13:19:59.088Z">
+<meta property="og:updated_time" content="2019-02-16T06:14:41.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="LR、SVM、RF、GBDT、XGBoost和LightGbm比较">
+<meta name="twitter:description" content="GBDT和XGBoost  gbdt以CART作为基分类器，xgb还支持线性分类器，这个时候xgb相当于带L1和L2正则项的LR或线性回归，（带正则可以控制模型的复杂度）  gbdt在优化时只用到一阶导数，xgb则对代价函数进行了二阶泰勒展开，同时用到了一阶和二阶导数，顺便，xgb支持支持自定义代价函数，只要函数一阶和二阶导数  Shrinkage(缩减)，相当于学习速率(xgb中的eta)，xg">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/01/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/16/LR、SVM、RF、GBDT、XGBoost和LightGbm比较/">
 
 
 
 
 
-  <title>Hello World | 个人随笔</title>
+  <title>LR、SVM、RF、GBDT、XGBoost和LightGbm比较 | 个人随笔</title>
   
 
 
@@ -282,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/01/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/16/LR、SVM、RF、GBDT、XGBoost和LightGbm比较/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="qihong.fu">
@@ -299,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">LR、SVM、RF、GBDT、XGBoost和LightGbm比较</h1>
         
 
         <div class="post-meta">
@@ -311,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-01T21:19:59+08:00">
-                2018-12-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-16T14:02:59+08:00">
+                2019-02-16
               </time>
             
 
@@ -349,15 +350,24 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>GBDT和XGBoost</p>
+<ol>
+<li><p>gbdt以CART作为基分类器，xgb还支持线性分类器，这个时候xgb相当于带L1和L2正则项的LR或线性回归，（带正则可以控制模型的复杂度）</p>
+</li>
+<li><p>gbdt在优化时只用到一阶导数，xgb则对代价函数进行了二阶泰勒展开，同时用到了一阶和二阶导数，顺便，xgb支持支持自定义代价函数，只要函数一阶和二阶导数</p>
+</li>
+<li><p>Shrinkage(缩减)，相当于学习速率(xgb中的eta)，xgb在进行完一次迭代后，会将叶子节点的权重乘上该系数，主要是为了削弱各棵树的影响，让后面有更大的学习空间</p>
+</li>
+<li><p>列抽样(column subsampling)，xgb借鉴了rf的做法，支持列抽样，不仅能降低过拟合，还能减少计算。</p>
+</li>
+<li><p>对于特征的值有缺失的样本，xgb可以自动学习出它的分裂方向。</p>
+</li>
+<li><p>xgb支持并行(在特征粒度上并行(xgboost在训练之前，预先对数据进行排序，然后保存为block结构，后面的迭代中重复地使用这个结构，大大减小计算量，这个block结构也使得并行成为了可能，在进行节点分裂时，需要计算每个特征的增益，最终选择增益最大的那个特征去做分裂，那么各个特征的增益计算就可以并行化))</p>
+</li>
+<li><p>可并行的近似直方图算法。树节点在进行分裂时，需要计算每个特征的每个分裂点对应的增益，即用贪心法枚举所有可能的分割点。当数据无法一次载入内存或者在分布式情况下，贪心算法效率会变得很低，所以xgb还提出了一种可并行的近似直方图算法，用于高效地生成候选的分割点。</p>
+</li>
+</ol>
+<p>   参考链接：<a href="https://www.jianshu.com/p/2a167d789b73" target="_blank" rel="noopener">https://www.jianshu.com/p/2a167d789b73</a></p>
 
       
     </div>
@@ -373,6 +383,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/machine-learning/" rel="tag"># machine learning</a>
+          
+        </div>
+      
 
       
       
@@ -382,8 +398,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/01/Python自动发邮件-withDataframe/" rel="next" title="Python自动发邮件-withDataframe">
-                <i class="fa fa-chevron-left"></i> Python自动发邮件-withDataframe
+              <a href="/2018/12/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -391,10 +407,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/16/LR、SVM、RF、GBDT、XGBoost和LightGbm比较/" rel="prev" title="LR、SVM、RF、GBDT、XGBoost和LightGbm比较">
-                LR、SVM、RF、GBDT、XGBoost和LightGbm比较 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -446,17 +458,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -507,22 +510,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
